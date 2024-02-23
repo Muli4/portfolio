@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maurice.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-V8ZPI1b/zmQktC+TzLuq7vvUQHth95d8pvVffBeD2+cqZ2+Kwv8fjzLr4Sh+T/kI" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="photos/maurice.jpg">
+</head>
+<body>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="active">maurice tech services</a>
+            <a href="#"><i class='bx bx-home'></i>home</a>
+            <a href="#"><i class='bx bx-envelope'></i>contact us</a>
+            <div class="dropdown"><button class="dropbtn">our services
+                <i class='bx bxs-down-arrow'></i>
+            </button>            
+            <div class="dropdown-content">
+                <a href="#">pc installation</a>
+                <a href="#">web services</a>
+                <a href="#">logo creation</a>
+            </div>
+            </div>
+            <a href="#"><i class='bx bx-hard-hat'></i>about</a>
+            <a href="javascript:void(0)" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+       <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className == "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, We are Maurice Tech Services</h1>
+            <h2>Software Developers</h2>
+            <p>
+                Specialized in all programming languages with four years of experience.
+                Allows team work and always looks forward to producing better results.
+                Always free to be contacted whenever needed
+            </p>
+            <div class="btn-box">
+                <a href="#">hire us</a>
+                <a href="#">let's talk</a>
+            </div>
+        </div>
+    </section>
+    
+    </body>
+</html>       
+
