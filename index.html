@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maurice.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="script.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-V8ZPI1b/zmQktC+TzLuq7vvUQHth95d8pvVffBeD2+cqZ2+Kwv8fjzLr4Sh+T/kI" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="photos/_Brand Logo.jpg">
+</head>
+    <header>
+        <div class="topnav" id="myTopnav" id="navbar">
+            <a href="#" class="active">maurice tech services</a>
+            <a href="#"><i class='bx bx-home'></i>home</a>
+            <a href="#contact"><i class='bx bx-envelope'></i>contact us</a>
+            <div class="dropdown"><button class="dropbtn">our services
+                <i class='bx bxs-down-arrow'></i>
+            </button>            
+            <div class="dropdown-content">
+                <a href="#database">databases</a>
+                <a href="#web-services">web services</a>
+                <a href="#logo-creation">logo creation</a>
+            </div>
+            </div>
+            <a href="#about"><i class='bx bx-hard-hat'></i>about</a>
+            <a href="javascript:void(0)" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+       <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className == "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+<body>
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, We are Maurice Tech Services</h1>
+            <h2>Software Developers</h2>
+            <p>
+                Specialized in all programming languages with four years of experience.
+                Allows team work and always looks forward to producing better results.
+                Always free to be contacted whenever needed. Work with us today and be assured you will never regret working with us.
+            </p>
+            <div class="btn-box">
+                <a href="#contact"><i class='bx bxs-bell'></i>hire us</a>
+                <a href="#contact"><i class='bx bxs-bell-ring'></i>contact</a>
+                <a href="#database"><i class='bx bxs-navigation'></i>explore</a>
+            </div>
+        </div>
+    </section>
+    
+    <div class="database-content" id="database">
+        <h2 class="title">DATABASES</h2>
+        <p>
+            We create databases for your businesses to help you keep record of your:
+           <b>employees,
+            financials,
+            sold items,
+            invoices.</b> 
+            By doing this you are rest assured that your business information is safe and incase it gets lost in hard copy you can retrieve your business information from your database.
+            The kinds of databses we create include <a href="#database1">school database</a>,<a href="#database2">farm database</a> and <a href="#database3">business database</a>.Click the above databases for some detailed information.
+            Kindly note that the we create all types of databases not just the ones on the examples above.
+        </p>
+        <div class="database-images">
+            <img src="photos/database1.jpg" alt="image1">
+            <img src="photos/database2.jpg" alt="image2">
+            <img src="photos/database3.jpg" alt="image3">
+        </div>
+        <div id="database1">
+            <h2 class="title">School Database</h2>
+            <div class="database1-content">
+            <p>
+                School database will have detailed informations about the studentd in each class.Also their examination marks will be recorded here in case they are needed in future.
+                The database will also have records for teachers starting from their teaching codes to their specific classes they handle.
+                The database will also have records for surbodinate staff. To sum up the school database wil be created according to our clients view.
+            </p>
+            <img src="photos/_Brand Logo.jpg" alt="school-database">
+        </div>
+        </div>
+        <div id="database2">
+            <h2 class="title">Farm Database</h2>
+            <div class="database1-content">
+            <p>
+                Farm database will mainly contain information about animal feed bieng bought or sold, animal product being bought or sold.
+                It will also contain information of the employees working on your farm etc.
+                To sum up we create different type of databases for farm ie it depends with our client's farm and the type of database they want.
+            </p>
+            <img src="photos/_Brand Logo.jpg" alt="farm-database">
+        </div>
+    </div>
+    <div id="database3">
+        <h2 class="title">Business Databse</h2>
+            <div class="database1-content">
+            <p>
+                Business database will depend with the type of business you are doing as our client.
+                Majorly the business database will contain the employees information and it will also the major activities which take place and are needed to be documented.
+                Contact today with the type of business you are doing and we will create a good database with records for you.
+            </p>
+            <img src="photos/_Brand Logo.jpg" alt="business-database">
+        </div>
+    </div>
+    </div>
+
+    <div id="web-services">
+        <p>click bang off</p>
+    </div>
+
+    <div id="logo-creation">
+        <p>logo are made</p>
+    </div>
+
+    <div class="contact" id="contact">
+        <p>hello mr muli</p>
+    </div>
+    
+    
+    <div id="about">
+        <p>about </p>
+    </div>
+    </body>
+</html>       
+
