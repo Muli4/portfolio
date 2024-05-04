@@ -88,10 +88,23 @@ body {
 /* introduction section  */
 .home
 {
-    height: 50vh; 
+    height: 70vh; 
     display: flex;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
+}
+.home-image-left,
+.home-image-right
+{
+    flex: 1;
+}
+.home-image-left img,
+.home-image-right img
+{
+    margin-left: 10px;
+    max-width: 90%;
+    height: 200px;
+    flex: 3;
 }
 .home-content
 {
@@ -149,7 +162,7 @@ body {
 }
 .btn-box a:nth-child(2)
 {
-    background: transparent;
+    background: #081b29;
     color: #00abf0;
 }
 .btn-box a:nth-child(2):hover
@@ -176,15 +189,103 @@ body {
 {
     width: 100%;
 }
-
 #contact, #database, #web-services, #logo-creation, #about
 {
-    padding: 0px 50px 50px 50px;
+    padding: 0px 50px 30px 10px;
     height: auto;
 }
-.database-content
+.ourteam h2
 {
-    background: rgb(30, 144, 255);
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #00abf0;
+    text-transform: uppercase;
+    
+}
+.ourteam-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: transparent;
+    gap: 20px;
+}
+.team
+{
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+}
+.team::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 171, 240, 0.5);
+    filter: blur(10px);
+    z-index: -1;
+}
+.team-image{
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 25%;
+    position: relative;
+    z-index: 1;
+}
+.ourteam-content
+{
+    padding: 20px;
+}
+.ourteam-content h3
+{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ourteam-content h4
+{
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.ourteam-content p
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.team-icons
+{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 0 20px 0 30px;
+}
+.ourteam-content a
+{
+    font-size: 26px;
+    justify-content: center;
+    color: #000;
+}
+.ourteam-content a:hover
+{
+    color: #00abf0;
 }
 .database-content .title
 {
@@ -192,7 +293,7 @@ body {
     font-family: sans-serif;
     font-weight: 700;
     font-size: 30px;
-    color: #081b29;
+    color: #00abf0;
 }
 .database-content p
 {
@@ -206,7 +307,7 @@ body {
 .database-content p a
 {
     text-decoration: none;
-    color: #081b29;
+    color: #00abf0;
     font-style: italic;
     font-weight: 600;
 }
@@ -288,6 +389,10 @@ body {
         width: 100%;
         text-align: left;
     }
+    .home-image-left,
+    .home-image-right{
+        display: none;
+    }
     .home-content {
         margin-top: auto;
         margin-left: 10px;
@@ -300,7 +405,7 @@ body {
         height: 130px;
     }
     .database-content{
-        margin-top: 100px;
+        margin-top: 10px;
     }
     .database-images{
         flex-direction: column;
@@ -315,5 +420,7 @@ body {
     .database1-content img{
         width: 100%;
     }
-    
+    .ourteam{
+        margin-top: 200px;
+    }
 }
