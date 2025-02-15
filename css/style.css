@@ -61,7 +61,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
-    padding: 8px 12px;
+    padding: 8px 10px;
     transition: color 0.3s ease-in-out;
 }
 nav ul li a::after{
@@ -139,5 +139,59 @@ nav ul li a:hover::after{
     to{
         opacity: 1;
         transform: translateY(1);
+    }
+}
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        
+        gap: 5px;;
+    }
+    nav ul li a{
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+    #hero{
+        height: auto;
+        padding: 50px 15px;
+    }
+    .hero-content h2{
+        font-size: 20px;
+    }
+    .hero-content p{
+        font-size: 14px;
+    }
+    .contact-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .contact-btn{
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+        font-size: 14px;
+        padding: 16px;
+    }
+    .contact-btn:nth-child(3){
+        max-width: 200px;
+    }
+}
+@media (max-width: 480px) {
+    nav h1 {
+        font-size: 20px;
+    }
+    .hero-content h2 {
+        font-size: 18px;
+    }
+    .hero-content p {
+        font-size: 13px;
+    }
+    .contact-btn {
+        font-size: 13px;
+        padding: 10px;
     }
 }
