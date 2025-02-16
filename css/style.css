@@ -116,18 +116,18 @@ nav ul li a:hover::after{
     gap: 8px;
     text-decoration: none;
     color: white;
-    background: #00bf00;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
     padding: 12px 20px;
     font-size: 15px;
     font-weight: 500;
     border-radius: 6px;
-    transition: 0.3 ease-in-out;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .contact-btn i{
     font-size: 15px;
 }
 .contact-btn:hover{
-    background: white;
+    background: linear-gradient(90deg , #00c6ff, #0072ff) ;
     color: black;
     transform: translateY(-3px);
 }
