@@ -142,6 +142,8 @@ nav ul li a:hover::after{
         transform: translateY(1);
     }
 }
+
+
 #projects{
     text-align: center;
     padding: 60px 20px;
@@ -205,6 +207,8 @@ nav ul li a:hover::after{
     background: linear-gradient(90deg, #e100ff, #7f00ff);
     transform: scale(1.05);
 }
+
+
 @media (max-width: 768px) {
     nav{
         flex-direction: column;
@@ -243,7 +247,25 @@ nav ul li a:hover::after{
     .contact-btn:nth-child(3){
         max-width: 200px;
     }
+    .projects-container{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .projects-container .project-card:last-child{
+        grid-column: span 1;
+        justify-self: center;
+    }
+    .project-card{
+        text-align: center;
+    }
+    .project-info h3{
+        font-size: 18px;
+    }
+    .project-info p{
+        font-size: 14px;
+    }
 }
+
+
 @media (max-width: 480px) {
     nav h1 {
         font-size: 20px;
@@ -257,5 +279,14 @@ nav ul li a:hover::after{
     .contact-btn {
         font-size: 13px;
         padding: 10px;
+    }
+    .projects-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card{
+        padding: 8px 12px;
+        font-size: 14px;
     }
 }
