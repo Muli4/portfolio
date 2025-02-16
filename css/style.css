@@ -8,11 +8,15 @@ body{
     text-align: center;
     background-color: #222;
     color: #fff;
+    padding: 90px;
 }
 header{
-    position: sticky;
+    position: fixed;
     background: #222;
     color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 1px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +25,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    top: 0;
     z-index: 1000;
 }
 nav h1{
@@ -130,7 +133,7 @@ nav ul li a:hover::after{
 .contact-btn:hover{
     background: linear-gradient(90deg , #00c6ff, #0072ff) ;
     color: black;
-    transform: translateY(-3px);
+    transform: scale(1.03);
 }
 @keyframes fadeInUp {
     from{
