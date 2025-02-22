@@ -192,20 +192,22 @@ nav h1:hover::after {
     justify-content: center;
     gap: 40px;
     width: 100%;
-    animation: dropIn 1s ease-in-out;
     animation-delay: 0.6s;
 }
 .stat{
-    text-align: center;
-    max-width: 120px;
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
 }
 .stat h3{
     font-size: 32px;
-    font-style: bold;
+    font-style: bolder;
     color: #00ff99;
 }
 .stat p{
     font-weight: 14px;
+    white-space: nowrap;
 }
 @keyframes dropIn {
     0%{
@@ -217,3 +219,28 @@ nav h1:hover::after {
         transform: translateY(0);
     }
 }
+
+.dark-mode nav h1, 
+.dark-mode .nav-links a, 
+.dark-mode .cv-button {
+    color: #00ff99;
+}
+
+.dark-mode .cv-button {
+    border-color: #00ff99;
+    background-color: transparent;
+}
+
+.dark-mode .cv-button:hover {
+    background-color: #00ff99;
+    color: #111;
+}
+
+.dark-mode .social-icons a {
+    color: #00ff99;
+}
+
+.dark-mode .social-icons a:hover {
+    color: white;
+}
+
