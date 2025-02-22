@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    gap: 2rem;
+}
+nav h1 {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+nav h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+nav h1:hover::after {
+    width: 100%; 
+}
+
+.dark-mode nav h1 {
+    color: #00B612 !important; 
+}
+
+.dark-mode nav h1::after {
+    background-color: white !important; 
+}
+
+.nav-links{
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+}
+.nav-links a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 3px;
+}
+.nav-links a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+.nav-links a:hover::after{
+    width: 100%;
+}
+.dark-mode .nav-links a{
+    color: #00B612;
+}
+.dark-mode .nav-links a:hover:after{
+    background-color: white;
+}
+.dark-mode{
+    background: #111;
+    color: #ffff;
+}
+.light-mode{
+    background: white;
+    color: black;
+}
+
+
