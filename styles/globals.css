@@ -32,7 +32,6 @@ nav h1::after {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: black;
     transition: width 0.3s ease-in-out;
 }
 
@@ -67,7 +66,7 @@ nav h1:hover::after {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: black;
+
     transition: width 0.3s ease-in-out;
 }
 .nav-links a:hover::after{
