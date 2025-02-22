@@ -44,7 +44,7 @@ export default function Hero() {
             {/* Statistics */}
             <div className="hero-status">
                 <div className="stat">
-                    <h3>10</h3>
+                    <h3>3</h3>
                     <p>Years of Experience</p>
                 </div>
 
