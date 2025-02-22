@@ -13,7 +13,7 @@ export default function Navbar(){
     }, [darkMode]);
     return(
         <nav className={darkMode ? "dark-mode" : "light-mode"}>
-            <h1>My Portfolio</h1>
+            <h1>Maurice .</h1>
             <div className="nav-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
