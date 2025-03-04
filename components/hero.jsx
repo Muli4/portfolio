@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import profilePic from "../public/profile.jpg";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faLinkedin,
@@ -55,7 +56,11 @@ export default function Hero() {
                         various programming languages and technologies.
                     </p>
                     <div className="hero-buttons">
-                        <button className="cv-button">Download CV</button>
+                        <button className="cv-button">
+                           <Link href="/Maurice_Muli_CV.pdf" download>
+                               Download CV
+                            </Link>
+                        </button>
                         <div className="social-icons">
                             <a href="https://www.linkedin.com/in/maurice-muli-12463830a/" aria-label="LinkedIn">
                                 <FontAwesomeIcon icon={faLinkedin} size="1x" />
