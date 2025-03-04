@@ -1,4 +1,4 @@
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -8,6 +8,8 @@ export default function Navbar() {
         }
         return true; // Default to dark mode
     });
+
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         if (darkMode) {
@@ -20,17 +22,28 @@ export default function Navbar() {
     }, [darkMode]);
 
     return (
-        <nav className={darkMode ? "dark-mode" : "light-mode"}>
-            <h1>Maurice .</h1>
-            <div className="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-                <button onClick={() => setDarkMode(!darkMode)}>
+        <div className={`navbar-container ${menuOpen ? "expanded" : ""}`}>
+            <nav className={`navbar ${darkMode ? "dark-mode" : "light-mode"}`}>
+                <h1 className="nav-logo">Maurice .</h1>
+
+                {/* Menu Button */}
+                <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+                    {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                </button>
+
+                {/* Navigation Links */}
+                <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                {/* Theme Toggle Button */}
+                <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
                     {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
                 </button>
-            </div>
-        </nav>
+            </nav>
+        </div>
     );
 }
