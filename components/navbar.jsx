@@ -24,7 +24,7 @@ export default function Navbar() {
     return (
         <div className={`navbar-container ${menuOpen ? "expanded" : ""}`}>
             <nav className={`navbar ${darkMode ? "dark-mode" : "light-mode"}`}>
-                <h1 className="nav-logo">Maurice Tech Services.</h1>
+                <h1 className="nav-logo">Mauri Tech Services.</h1>
 
                 {/* Menu Button */}
                 <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
